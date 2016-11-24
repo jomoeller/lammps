@@ -58,6 +58,16 @@ class Min : protected Pointers {
   double dmax;                // max dist to move any atom in one step
   int linestyle;              // 0 = backtrack, 1 = quadratic, 2 = forcezero
 
+  // BEGIN WOLFRAMS' HACK
+  int DELAYSTEP;               // FIRE parameters
+  double DT_GROW;
+  double DT_SHRINK;
+  double ALPHA0;
+  double ALPHA_SHRINK;
+  double TMAX;
+  // END WOLFRAMS' HACK
+
+
   int nelist_global,nelist_atom;    // # of PE,virial computes to check
   int nvlist_global,nvlist_atom;
   class Compute **elist_global;     // lists of PE,virial Computes

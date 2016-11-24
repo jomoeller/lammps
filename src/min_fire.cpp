@@ -27,12 +27,17 @@ using namespace LAMMPS_NS;
 
 #define EPS_ENERGY 1.0e-8
 
+/*
+
+NOT NEEDED ANYMORE. WILL BE DEFINED IN PARAMETER FILE:
 #define DELAYSTEP 5
 #define DT_GROW 1.1
 #define DT_SHRINK 0.5
 #define ALPHA0 0.1
 #define ALPHA_SHRINK 0.99
 #define TMAX 10.0
+
+*/
 
 /* ---------------------------------------------------------------------- */
 
